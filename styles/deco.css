@@ -1,0 +1,176 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-color: rgb(0, 0, 0);
+	height: 100%;
+
+
+}
+
+img {
+	max-width: 100%;
+}
+
+nav {
+	background-color: #000000;
+    color: white;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	height: 50px;
+    font-size: 23px;
+
+
+}
+
+nav li {
+
+	display: inline-block;
+	position:relative;
+	height: 40px;
+	margin-right: 80px;
+	margin-top: 10px;	
+
+
+	/* hona kbsat el home wle 7dha ma 3a ada cocktail*/
+		
+}
+
+nav li:hover ul {
+	position: absolute;
+	display: block;
+
+}
+
+nav li a {
+	background-color: #000000;
+	width: 140px;
+	height: 40px;
+	text-decoration:none;
+	color: white;
+	font-size: 23px;
+}
+
+nav li a:hover {
+	color: #FFEFBB;
+	background-color: #000000;
+}
+
+nav li .active {
+	color: #FFEFBB;
+	background-color: #723300;
+}
+
+.types {
+	display:none;
+
+}
+
+.types li a {
+	display:block;
+	height: 40px;
+	width: 140px;
+	background-color: FFEFBB;
+	color: #901f1f;
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #new ul {
+	display: inline-grid;
+	grid-auto-flow: row;
+	grid-gap: 24px;
+	justify-items: center;
+	margin: auto;
+	position: bottom;
+  }
+  
+  @media (min-width: 500px) {
+	#new ul {
+	  grid-auto-flow: column;
+	}	
+  }
+
+  #new li a {
+	display:inline-block;
+	position: relative;
+	margin-top: 700px;
+  }
+
+  
+  
+   #new a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	box-shadow: inset 0 -1px 0 hsla(0, 0%, 0%, 0.4);
+	position: fixed;
+	bottom: 0;
+	margin-right: 80px;
+
+
+  }
+  
+  #new a:hover {
+	box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 3%, 0.4);
+  }
+  
+  #new li:last-child {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+  }
+  
+  #new li:hover ~ li p {
+	animation: wave-animation 0.3s infinite;
+  }
+  
+  /* below is just for demo styling */
+  
+    div {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	line-height: 1.3;
+	font-family: Menlo, monospace;
+	background-image:url('BAR.jpg');
+	background-size: cover;
+
+  }
+  
+  @keyframes wave-animation {
+	0%,
+	100% {
+	  transform: rotate(0deg);
+	}
+	25% {
+	  transform: rotate(20deg);
+	}
+	75% {
+	  transform: rotate(-15deg);
+	}
+  }
+  
+  
